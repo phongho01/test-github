@@ -24,6 +24,16 @@
       "address": "0xD35Eb1Bc1D82C1c31650D18A998cc7b2FCe588b2",
       "txHash": "0x0a94562d41eaf316446455c8ead8007b4959e58b1e0ad2a016094d99de9940f8",
       "kind": "transparent"
+    },
+    {
+      "address": "0x1DAE40f862c69bAa6c1899b34e6b0595D1b39CcC",
+      "txHash": "0xa8bd74f32f5444e36749ec6181e77f512f6f7c299b973a16d1771f70d7207d4a",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x82AfCC141520203528E481186Ac09F7A6D57a820",
+      "txHash": "0x6b199929f474066131b2e808a9f42490bec55aa3f600302ecd7d6577a5bc1926",
+      "kind": "transparent"
     }
   ],
   "impls": {
@@ -884,8 +894,8 @@
       }
     },
     "a8f9b17dd3176643b2666291b6b308078446f2b0d02749741dec34c255d01edf": {
-      "address": "0x689b1c292beFdb8425f799524614Cb259B1A5671",
-      "txHash": "0x1012b0d0bee298a711b7469c9877e926487c6dbb495e703d23c0766966b7811a",
+      "address": "0xe235b7122f2FcC36E2C201156EA6fc3DDeF86109",
+      "txHash": "0x7d7a55698b026d3c9719e7c5acc41aea4c800c1ac9806e42bb7d745883c217aa",
       "layout": {
         "storage": [
           {
@@ -1296,6 +1306,336 @@
               }
             ],
             "numberOfBytes": "288"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "dcfa3160d75112d91457a8f139669873cefb2843685c76061bbab4f1b45439e4": {
+      "address": "0x9b075656A75a7656749B20B3Edca1F05c6fc272B",
+      "txHash": "0xbc1cd69b9aec7f90c8baabdb28fe05c409a5f6dca93a74aa1a7d8e0d4935b49d",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "label": "_status",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\security\\ReentrancyGuardUpgradeable.sol:38"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\security\\ReentrancyGuardUpgradeable.sol:74"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "courseData",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_mapping(t_bytes32,t_struct(Course)3430_storage)",
+            "contract": "LearnToEarn",
+            "src": "contracts\\LearnToEarn.sol:17"
+          },
+          {
+            "label": "learnerData",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_mapping(t_bytes32,t_mapping(t_address,t_struct(Learner)3440_storage))",
+            "contract": "LearnToEarn",
+            "src": "contracts\\LearnToEarn.sol:20"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_struct(Learner)3440_storage)": {
+            "label": "mapping(address => struct Learner)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_mapping(t_address,t_struct(Learner)3440_storage))": {
+            "label": "mapping(bytes32 => mapping(address => struct Learner))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_struct(Course)3430_storage)": {
+            "label": "mapping(bytes32 => struct Course)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Course)3430_storage": {
+            "label": "struct Course",
+            "members": [
+              {
+                "label": "creator",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "rewardAddress",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "budget",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "budgetAvailable",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "bonus",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "totalLearnersClaimedBonus",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "timeCreated",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "timeEndBonus",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "timeRemoved",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "isBonusToken",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "9"
+              },
+              {
+                "label": "canMintNFT",
+                "type": "t_bool",
+                "offset": 1,
+                "slot": "9"
+              },
+              {
+                "label": "isUsingDuration",
+                "type": "t_bool",
+                "offset": 2,
+                "slot": "9"
+              }
+            ],
+            "numberOfBytes": "320"
+          },
+          "t_struct(Learner)3440_storage": {
+            "label": "struct Learner",
+            "members": [
+              {
+                "label": "timeStarted",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "timeCompleted",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "timeRewarded",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "nftIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "c71b3696a49aa41ce5f020d020d3d73a7ec28b0ee8e91b5f5108b72686c70182": {
+      "address": "0xe562C027BD815a2cE0010c14349a0C35B4189074",
+      "txHash": "0x1de5bf86dc841878f3f7688fbaf2a2f3d534767d799eb02ec637e0589ee65646",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "learnToEarn",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_address",
+            "contract": "TokenFactory",
+            "src": "contracts\\TokenFactory.sol:18"
+          },
+          {
+            "label": "templateNFTReward",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_contract(INFTReward)8303",
+            "contract": "TokenFactory",
+            "src": "contracts\\TokenFactory.sol:24"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(INFTReward)8303": {
+            "label": "contract INFTReward",
+            "numberOfBytes": "20"
           },
           "t_uint256": {
             "label": "uint256",
