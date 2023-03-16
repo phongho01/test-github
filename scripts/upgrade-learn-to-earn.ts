@@ -2,7 +2,7 @@ import { ethers, upgrades, network, run } from "hardhat";
 import { SignerWithAddress } from "@nomiclabs/hardhat-ethers/signers";
 import { LearnToEarn, LearnToEarn__factory } from "../typechain-types";
 import { Table } from "./utils";
-import * as contractAddresses from "../deployed/polygonMumbai_1675766902630.json";
+import * as contractAddresses from "../deployed/mumbai_1675861179741.json";
 
 const table = new Table();
 
