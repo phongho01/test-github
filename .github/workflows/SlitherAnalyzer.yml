@@ -27,9 +27,10 @@ jobs:
           npm install
 
       - name: Run Slither
-        uses: crytic/slither-action@v0.2.0
+        uses: crytic/slither-action@v0.3.0
         id: slither
         with:
+          node-version: 16
           sarif: results.sarif
           fail-on: none
 
