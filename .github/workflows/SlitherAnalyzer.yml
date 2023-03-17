@@ -16,11 +16,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: "Initialize CodeQL"
-        uses: "github/codeql-action/init@v2"
-        with:
-          languages: ${{ matrix.language }}
-      
       - name: Setup node LTS
         uses: actions/setup-node@v3
         with:
